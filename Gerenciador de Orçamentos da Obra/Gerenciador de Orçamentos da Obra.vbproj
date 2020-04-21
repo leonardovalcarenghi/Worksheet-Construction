@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BE32E0D-260F-4466-A878-C438E44C7B82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gerenciador_de_Orçamentos_da_Obra.My.MyApplication</StartupObject>
+    <RootNamespace>Gerenciador_de_Orçamentos_da_Obra</RootNamespace>
+    <AssemblyName>Gerenciador de Orçamentos da Obra</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gerenciador de Orçamentos da Obra.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gerenciador de Orçamentos da Obra.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutSoftwareDialog.Designer.vb">
+      <DependentUpon>AboutSoftwareDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutSoftwareDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\OrçamentoItem2Control.Designer.vb">
+      <DependentUpon>OrçamentoItem2Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\OrçamentoItem2Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\LançarNovoOrçamentoDialog.Designer.vb">
+      <DependentUpon>LançarNovoOrçamentoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\LançarNovoOrçamentoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\MaterialItemListControl.Designer.vb">
+      <DependentUpon>MaterialItemListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\MaterialItemListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\VisualizarOrçamentoDialog.Designer.vb">
+      <DependentUpon>VisualizarOrçamentoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\VisualizarOrçamentoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisarOrçamentosDialog.Designer.vb">
+      <DependentUpon>PesquisarOrçamentosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisarOrçamentosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saldos\AdicionarSaldoDialog.Designer.vb">
+      <DependentUpon>AdicionarSaldoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Saldos\AdicionarSaldoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItemListControl.Designer.vb">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItemListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\NovoOrçamentoDialog.Designer.vb">
+      <DependentUpon>NovoOrçamentoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\NovoOrçamentoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orçamentos\OrçamentoItemControl.Designer.vb">
+      <DependentUpon>OrçamentoItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orçamentos\OrçamentoItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Saldos\SaldoItemControl.Designer.vb">
+      <DependentUpon>SaldoItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Saldos\SaldoItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Saldos\SaldosDialog.Designer.vb">
+      <DependentUpon>SaldosDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Saldos\SaldosDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareHomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareHomeForm.Designer.vb">
+      <DependentUpon>SoftwareHomeForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SoftwareModule.vb" />
+    <Compile Include="SoftwareUpdate\SoftwareUpdatesDialog.Designer.vb">
+      <DependentUpon>SoftwareUpdatesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareUpdate\SoftwareUpdatesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutSoftwareDialog.resx">
+      <DependentUpon>AboutSoftwareDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\LançarNovoOrçamentoDialog.resx">
+      <DependentUpon>LançarNovoOrçamentoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\MaterialItemListControl.resx">
+      <DependentUpon>MaterialItemListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\OrçamentoItem2Control.resx">
+      <DependentUpon>OrçamentoItem2Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\VisualizarOrçamentoDialog.resx">
+      <DependentUpon>VisualizarOrçamentoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisarOrçamentosDialog.resx">
+      <DependentUpon>PesquisarOrçamentosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saldos\AdicionarSaldoDialog.resx">
+      <DependentUpon>AdicionarSaldoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuItemListControl.resx">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\NovoOrçamentoDialog.resx">
+      <DependentUpon>NovoOrçamentoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orçamentos\OrçamentoItemControl.resx">
+      <DependentUpon>OrçamentoItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saldos\SaldoItemControl.resx">
+      <DependentUpon>SaldoItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saldos\SaldosDialog.resx">
+      <DependentUpon>SaldosDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareHomeForm.resx">
+      <DependentUpon>SoftwareHomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareUpdate\SoftwareUpdatesDialog.resx">
+      <DependentUpon>SoftwareUpdatesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-carrinho-de-mão-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caixa-de-ferramentas-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-serrote-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rolo-de-pintura-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pá-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-furadeira-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-estilete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chave-inglesa-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_Down_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_Enter_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#DeleteItemList_Enter_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#DeleteItemList_Normal_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#EditItemList_Enter_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#EditItemList_Normal_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leo_valcarenghi_nametag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuAdd_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuLançarSaldo_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuLançarSaldo_28x281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuConsultarSaldo_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuUpdates_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuInfo_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuSaida_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Calendar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Value_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-marcador-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lista-numerada-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-passado-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-passado-28 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nada-foi-encontrado-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voltar-28.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
